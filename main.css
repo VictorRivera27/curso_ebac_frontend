@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 30px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+
+button {
+    background-color: #373838;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9a9c9b;
+}
+
+.mensagem-sucesso {
+    background-color: #2fda76;
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.mensagem-error {
+    background-color: #da2f2f;
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}

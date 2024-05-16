@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício módulo 12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-primary">
+    <div class="container position-absolute top-50 start-50 translate-middle bg-light px-5 rounded-5" style="width: 750px;">
+        <h1 class="text-primary text-center mt-5 mb-5 fw-bold">Formulário de Cadastro</h1>
+        <form class="needs-validation" novalidate>
+            <div class="mb-4">
+                <label for="nome" class="form-label">Nome completo:</label>
+                <input type="text" class="form-control mb-2" id="nome" name="nome" placeholder="Digite seu nome completo aqui!" autocomplete="off" required>
+                <div class="invalid-feedback fw-semibold">
+                    Por favor, insira seu nome.
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Digite seu e-mail aqui!" autocomplete="off" required>
+                <div class="invalid-feedback fw-semibold">
+                    Por favor, insira seu e-mail.
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control mb-2" id="telefone" name="telefone" autocomplete="off" required>
+                <div class="invalid-feedback fw-semibold">
+                    Por favor, insira seu telefone.
+                </div>
+            </div>
+            <div class="form-check mb-4">
+                <input type="checkbox" class="form-check-input" id="termos" name="termos" required>
+                <label for="termos" class="form-check-label">Li e concordo com os <a href="https://www.lipsum.com" class="link-underline-primary">termos de serviço e a política</a> de privacidade deste site.</label>
+                <div class="invalid-feedback fw-semibold">
+                    Você deve concordar antes de enviar.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary w-100 mb-5">Enviar formulário</button>
+        </form>
+        <div class="d-none alert alert-success text-center mb-5" role="alert" id="formulario-enviado">
+            Formulário enviado com sucesso!
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
